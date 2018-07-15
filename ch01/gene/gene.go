@@ -1,3 +1,4 @@
+// Package gene provides compressed storage for a string of nucleotides.
 package gene
 
 import (
