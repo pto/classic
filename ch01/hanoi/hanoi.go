@@ -13,7 +13,7 @@ type Tower []int
 // push pushes a disk onto a tower.
 func (t *Tower) push(n int) {
 	if len(*t) > 0 && (*t)[len(*t)-1] >= n {
-		fmt.Fprintf(os.Stderr, "%s: invalid state: pushing %d onto %v",
+		fmt.Fprintf(os.Stderr, "%s: invalid state: pushing %d onto %v\n",
 			path.Base(os.Args[0]), n, *t)
 		os.Exit(1)
 	}
